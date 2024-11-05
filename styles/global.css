@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font: inherit;
     box-sizing: border-box;
 }
 
@@ -13,9 +14,46 @@
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
 
-    --font-family: "Poppins", sans-serif;
-    --text-lg: bold 32px/125% var(--font-family);
-    --text: 16px/150% var(--font-family);
-    --text-md: 14px/170% var(--font-family);
-    --text-sm: 12px/170% var(--font-family);
+    --ff-sans: "Poppins", system-ui, sans-serif;
+
+    --fw-base: 400;
+    --fw-bold: 700;
+
+    --fs-md: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.5rem;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-md);
+    line-height: 1.7;
+    color: var(--text-color-secondary);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    line-height: 1.25;
+    color: var(--text-color-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul[role="list"] {
+    list-style: none;
+}
+
+@media (width >= 80em) {
+    :root {
+        --fs-lg: 2rem;
+    }
 }
