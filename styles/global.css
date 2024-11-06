@@ -56,6 +56,15 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+svg path:hover {
+  fill: var(--brand-color);
+}
+
 ul[role="list"] {
   list-style: none;
 }
@@ -63,6 +72,9 @@ ul[role="list"] {
 @media (width >= 80em) {
   :root {
     --fs-lg: 2rem;
+
+    --px-base: 2rem;
+    /* --px-lg: 2.5rem; */
 
     --py-base: 1.25rem;
     --py-lg: 1.5rem;
