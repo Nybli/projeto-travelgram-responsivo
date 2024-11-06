@@ -1,0 +1,48 @@
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  --max-width: 360px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 1280px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+}

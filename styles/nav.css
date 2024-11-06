@@ -1,0 +1,16 @@
+nav {
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+  }
+  
+  nav ul {
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav ul li:last-child img {
+    width: 40px;
+    height: 40px;
+  }
+

@@ -1,0 +1,26 @@
+main {
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+  justify-content: center;
+}
+
+main img {
+  width: 328px;
+  height: 328px;
+  object-fit: cover;
+}
+
+@media (width >= 80em) {
+  main {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+  }
+
+  main img {
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+  }
+}
