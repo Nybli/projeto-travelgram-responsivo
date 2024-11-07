@@ -7,6 +7,11 @@ nav {
   nav ul {
     align-items: center;
     gap: 1rem;
+    font-size: 16px;
+  }
+
+  nav ul li {
+    padding: 4px;
   }
   
   nav ul li:last-child img {
