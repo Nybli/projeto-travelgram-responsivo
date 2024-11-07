@@ -2,10 +2,6 @@
   padding-inline: var(--px-base);
 }
 
-.px-lg {
-  padding-inline: var(--px-lg);
-}
-
 .py-base {
   padding-block: var(--py-base);
 }

@@ -34,7 +34,7 @@ header .container {
       
       #profile {
         display: flex;
-        gap: 32px;
+        gap: 2rem;
       }
       
       #profile > div {
@@ -51,7 +51,5 @@ header .container {
 
       #info {
         width: 280px;
-        /* flex-direction: column; */
-        /* gap: 1rem; */
       }
   }
